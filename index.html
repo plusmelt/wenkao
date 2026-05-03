@@ -545,6 +545,307 @@
       font-weight: 800;
     }
 
+    .app-screens-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 40px;
+    }
+
+    .screen-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: 0 20px 60px rgba(23, 48, 71, 0.08);
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .screen-card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .screen-copy h3 {
+      margin: 0;
+      color: var(--blue-dark);
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+
+    .screen-copy p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .screen-link-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: var(--gold-soft);
+      color: #7b5600;
+      font-weight: 900;
+      font-size: 12px;
+      margin-top: 16px;
+    }
+
+    .mini-phone {
+      width: 210px;
+      min-height: 405px;
+      border-radius: 34px;
+      padding: 10px;
+      background: #14243a;
+      box-shadow: 0 18px 42px rgba(23, 48, 71, 0.16);
+    }
+
+    .mini-screen {
+      min-height: 385px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #fffdf8, #f3f9fb);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .mini-status {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .mini-screen-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .mini-screen-title strong {
+      color: var(--blue-dark);
+      font-size: 16px;
+      line-height: 1.15;
+    }
+
+    .mini-dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 12px;
+      background: var(--green-soft);
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+    }
+
+    .mini-circle {
+      width: 128px;
+      height: 128px;
+      border-radius: 50%;
+      margin: 14px auto;
+      background: conic-gradient(var(--blue) 0 68%, #e7edf4 68% 100%);
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .mini-circle::after {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border-radius: 50%;
+      background: #fffdf8;
+    }
+
+    .mini-circle span {
+      position: relative;
+      z-index: 1;
+      font-weight: 900;
+      color: var(--blue-dark);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .mini-action {
+      width: 100%;
+      border: 0;
+      border-radius: 999px;
+      min-height: 36px;
+      background: var(--blue);
+      color: #ffffff;
+      font-weight: 900;
+      margin: 10px 0 12px;
+    }
+
+    .tiny-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 10px;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
+    }
+
+    .tiny-card strong {
+      display: block;
+      color: var(--ink);
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+
+    .mini-form label {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 800;
+      margin: 10px 0 5px;
+    }
+
+    .mini-input,
+    .mini-select {
+      min-height: 34px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .mini-slider {
+      height: 8px;
+      border-radius: 999px;
+      background: #e7edf4;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .mini-slider span {
+      display: block;
+      height: 100%;
+      width: 62%;
+      background: var(--green);
+      border-radius: inherit;
+    }
+
+    .mini-rating {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .mini-rating span {
+      height: 24px;
+      border-radius: 9px;
+      background: #e7edf4;
+      display: grid;
+      place-items: center;
+      font-size: 10px;
+      color: var(--muted);
+      font-weight: 900;
+    }
+
+    .mini-rating span.active {
+      background: var(--gold);
+      color: #513900;
+    }
+
+    .mini-bars {
+      display: grid;
+      gap: 11px;
+      margin-top: 16px;
+    }
+
+    .mini-bar-label {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+      font-size: 10.5px;
+      margin-bottom: 5px;
+      font-weight: 800;
+    }
+
+    .mini-bar-track {
+      height: 10px;
+      border-radius: 999px;
+      background: #e7edf4;
+      overflow: hidden;
+    }
+
+    .mini-bar-track b {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--blue);
+    }
+
+    .mini-plan-section {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      padding: 12px;
+      margin-top: 10px;
+    }
+
+    .mini-plan-section h4 {
+      margin: 0 0 6px;
+      color: var(--blue-dark);
+      font-size: 12px;
+    }
+
+    .mini-plan-section p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 10.5px;
+      line-height: 1.35;
+    }
+
+    .mini-line-chart {
+      height: 130px;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 12px;
+      margin-top: 14px;
+    }
+
+    .mini-line-chart svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .weekly-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .weekly-summary div {
+      background: var(--green-soft);
+      border-radius: 14px;
+      padding: 10px 7px;
+      text-align: center;
+      color: #27645e;
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
     .features-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -834,6 +1135,7 @@
 
     @media (max-width: 960px) {
       .hero,
+      .screen-card,
       .simulator,
       .teacher-section,
       .cta-box {
@@ -869,6 +1171,7 @@
 
       .problem-grid,
       .features-grid,
+      .app-screens-grid,
       .teacher-grid,
       .team-grid,
       .mini-grid {
@@ -897,6 +1200,7 @@
         <div class="nav-links" aria-label="Primary navigation">
           <a href="#problem"><span data-zh>问题</span><span data-en>Problem</span></a>
           <a href="#journey"><span data-zh>路径</span><span data-en>Journey</span></a>
+          <a href="#screens"><span data-zh>原型页面</span><span data-en>App Screens</span></a>
           <a href="#features"><span data-zh>功能</span><span data-en>Features</span></a>
           <a href="#teacher"><span data-zh>教师端</span><span data-en>Teacher View</span></a>
           <a href="#team"><span data-zh>团队</span><span data-en>Team</span></a>
@@ -1084,6 +1388,158 @@
             <span class="tag"><span data-zh>个人目标</span><span data-en>Personal Goals</span></span>
             <span class="tag"><span data-zh>长期追踪</span><span data-en>Long Term Tracking</span></span>
             <span class="tag"><span data-zh>学习迁移</span><span data-en>Learning Transfer</span></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="section-kicker"><span data-zh>App 原型页面</span><span data-en>App Prototype Screens</span></div>
+      <h2 class="section-title">
+        <span data-zh>五个页面共同支持从日常记录到长期评价的完整路径。</span>
+        <span data-en>Five screens support the full path from daily logging to long term evaluation.</span>
+      </h2>
+      <p class="section-subtitle">
+        <span data-zh>这一部分在原网页基础上加入更具体的 app 界面展示，让项目从概念介绍变成可视化产品原型。</span>
+        <span data-en>This section adds concrete app interface screens to the original website, turning the concept into a more visible product prototype.</span>
+      </p>
+
+      <div class="app-screens-grid">
+        <article class="screen-card">
+          <div class="mini-phone" aria-label="Dashboard screen mockup">
+            <div class="mini-screen">
+              <div class="mini-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="mini-screen-title">
+                <strong><span data-zh>Dashboard</span><span data-en>Dashboard</span></strong>
+                <span class="mini-dot">🌿</span>
+              </div>
+              <div class="mini-circle"><span>3</span></div>
+              <button class="mini-action" type="button"><span data-zh>+ 记录压力时刻</span><span data-en>+ Record Stress Moment</span></button>
+              <div class="tiny-card"><strong><span data-zh>最近记录</span><span data-en>Recent Log</span></strong><span data-zh>数学模考前感到紧张</span><span data-en>Nervous before math mock exam</span></div>
+              <div class="tiny-card"><strong><span data-zh>常用策略</span><span data-en>Top Strategy</span></strong><span data-zh>呼吸重启，认知重评</span><span data-en>Breathing reset, reframing</span></div>
+            </div>
+          </div>
+          <div class="screen-copy">
+            <h3><span data-zh>页面 1：Dashboard 首页</span><span data-en>Screen 1: Dashboard</span></h3>
+            <p><span data-zh>首页呈现今日压力水平、快速记录按钮、近期压力日志和常用应对策略，让学生一进入 app 就能看到自己的整体状态。</span><span data-en>The home screen shows today’s stress level, a quick log button, recent stress moments, and commonly used coping strategies.</span></p>
+            <span class="screen-link-tag"><span data-zh>总览入口</span><span data-en>Overview Entry</span></span>
+          </div>
+        </article>
+
+        <article class="screen-card">
+          <div class="mini-phone" aria-label="Stress log screen mockup">
+            <div class="mini-screen">
+              <div class="mini-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="mini-screen-title">
+                <strong><span data-zh>Stress Log</span><span data-en>Stress Log</span></strong>
+                <span class="mini-dot">✍️</span>
+              </div>
+              <div class="mini-form">
+                <label><span data-zh>发生了什么？</span><span data-en>What happened?</span></label>
+                <div class="mini-input"><span data-zh>英语限时练习没有做完</span><span data-en>Did not finish timed English practice</span></div>
+                <label><span data-zh>压力水平 1 到 5</span><span data-en>Stress level 1 to 5</span></label>
+                <div class="mini-slider"><span></span></div>
+                <label><span data-zh>使用的策略</span><span data-en>Strategy used</span></label>
+                <div class="mini-select"><span data-zh>任务拆分</span><span data-en>Task breakdown</span></div>
+                <label><span data-zh>是否有帮助？</span><span data-en>Did it help?</span></label>
+                <div class="mini-rating"><span>1</span><span>2</span><span>3</span><span class="active">4</span><span>5</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="screen-copy">
+            <h3><span data-zh>页面 2：Stress Log 记录页面</span><span data-en>Screen 2: Stress Log</span></h3>
+            <p><span data-zh>这是 Level 3 Behavior 的核心页面，用于记录真实压力事件、压力强度、使用策略和策略效果。</span><span data-en>This is the core Level 3 Behavior screen, capturing real stress events, stress intensity, strategy use, and perceived effectiveness.</span></p>
+            <span class="screen-link-tag"><span data-zh>行为应用证据</span><span data-en>Behavior Evidence</span></span>
+          </div>
+        </article>
+
+        <article class="screen-card">
+          <div class="mini-phone" aria-label="Strategy tracker screen mockup">
+            <div class="mini-screen">
+              <div class="mini-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="mini-screen-title">
+                <strong><span data-zh>Strategy Tracker</span><span data-en>Strategy Tracker</span></strong>
+                <span class="mini-dot">📊</span>
+              </div>
+              <div class="mini-bars">
+                <div>
+                  <div class="mini-bar-label"><span data-zh>呼吸重启</span><span data-en>Breathing</span><span>82%</span></div>
+                  <div class="mini-bar-track"><b style="width: 82%"></b></div>
+                </div>
+                <div>
+                  <div class="mini-bar-label"><span data-zh>认知重评</span><span data-en>Reframing</span><span>68%</span></div>
+                  <div class="mini-bar-track"><b style="width: 68%"></b></div>
+                </div>
+                <div>
+                  <div class="mini-bar-label"><span data-zh>任务拆分</span><span data-en>Task Breakdown</span><span>56%</span></div>
+                  <div class="mini-bar-track"><b style="width: 56%"></b></div>
+                </div>
+              </div>
+              <div class="tiny-card"><strong><span data-zh>本周最有效</span><span data-en>Most Effective This Week</span></strong><span data-zh>考前 3 分钟呼吸重启</span><span data-en>3 minute breathing reset before exams</span></div>
+            </div>
+          </div>
+          <div class="screen-copy">
+            <h3><span data-zh>页面 3：Strategy Tracker 策略分析</span><span data-en>Screen 3: Strategy Tracker</span></h3>
+            <p><span data-zh>系统把压力记录转化为策略使用图表，帮助学生判断哪些方法最常用，哪些方法最有效。</span><span data-en>The system translates stress logs into strategy analytics, helping students see which methods they use most and which ones work best.</span></p>
+            <span class="screen-link-tag"><span data-zh>Behavior + Results</span><span data-en>Behavior + Results</span></span>
+          </div>
+        </article>
+
+        <article class="screen-card">
+          <div class="mini-phone" aria-label="Resilience plan screen mockup">
+            <div class="mini-screen">
+              <div class="mini-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="mini-screen-title">
+                <strong><span data-zh>Resilience Plan</span><span data-en>Resilience Plan</span></strong>
+                <span class="mini-dot">📝</span>
+              </div>
+              <div class="mini-plan-section">
+                <h4><span data-zh>我的压力触发因素</span><span data-en>My Stress Triggers</span></h4>
+                <p><span data-zh>限时考试，排名变化，错题积累。</span><span data-en>Timed exams, ranking changes, accumulated mistakes.</span></p>
+              </div>
+              <div class="mini-plan-section">
+                <h4><span data-zh>我的策略</span><span data-en>My Strategies</span></h4>
+                <p><span data-zh>呼吸重启，认知重评，任务拆分。</span><span data-en>Breathing reset, cognitive reframing, task breakdown.</span></p>
+              </div>
+              <div class="mini-plan-section">
+                <h4><span data-zh>我的目标</span><span data-en>My Goals</span></h4>
+                <p><span data-zh>每周至少记录 3 次压力事件并复盘一次。</span><span data-en>Log at least three stress events weekly and reflect once.</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="screen-copy">
+            <h3><span data-zh>页面 4：Resilience Plan 个人计划</span><span data-en>Screen 4: Resilience Plan</span></h3>
+            <p><span data-zh>学生将个人压力模式、适合自己的策略和可测量目标整合成 Academic Resilience Plan。</span><span data-en>Students integrate personal stress patterns, preferred strategies, and measurable goals into an Academic Resilience Plan.</span></p>
+            <span class="screen-link-tag"><span data-zh>Level 4 Results</span><span data-en>Level 4 Results</span></span>
+          </div>
+        </article>
+
+        <article class="screen-card wide">
+          <div class="mini-phone" aria-label="Progress tracking screen mockup">
+            <div class="mini-screen">
+              <div class="mini-status"><span>9:41</span><span>● ● ●</span></div>
+              <div class="mini-screen-title">
+                <strong><span data-zh>Progress Tracking</span><span data-en>Progress Tracking</span></strong>
+                <span class="mini-dot">📈</span>
+              </div>
+              <div class="mini-line-chart">
+                <svg viewBox="0 0 160 100" role="img" aria-label="Stress level line graph">
+                  <polyline points="0,78 26,62 52,70 78,46 104,52 130,34 160,28" fill="none" stroke="#1657a8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></polyline>
+                  <polyline points="0,86 26,80 52,78 78,66 104,60 130,50 160,42" fill="none" stroke="#5da89f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"></polyline>
+                </svg>
+              </div>
+              <div class="weekly-summary">
+                <div><span data-zh>记录 5 次</span><span data-en>5 Logs</span></div>
+                <div><span data-zh>策略 4 种</span><span data-en>4 Strategies</span></div>
+                <div><span data-zh>压力下降</span><span data-en>Stress Lower</span></div>
+              </div>
+              <div class="tiny-card"><strong><span data-zh>本周总结</span><span data-en>Weekly Summary</span></strong><span data-zh>考前呼吸策略的有效评分提高。</span><span data-en>Pre exam breathing received higher effectiveness ratings.</span></div>
+            </div>
+          </div>
+          <div class="screen-copy">
+            <h3><span data-zh>页面 5：Progress Tracking 长期变化</span><span data-en>Screen 5: Progress Tracking</span></h3>
+            <p><span data-zh>长期追踪页面显示压力水平变化和每周策略使用情况，使评价从课堂表现延伸到持续行为改变。</span><span data-en>The progress screen shows changes in stress level and weekly strategy use, extending evaluation from classroom performance to sustained behavioral change.</span></p>
+            <span class="screen-link-tag"><span data-zh>长期评价创新</span><span data-en>Long Term Evaluation</span></span>
           </div>
         </article>
       </div>
